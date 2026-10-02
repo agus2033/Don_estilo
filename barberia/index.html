@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Barbería · Turnos y puntos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#141c26" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <div id="ld" role="status" aria-live="polite">
+      <div class="bp"><i></i></div>
+      <span id="ldt">Cargando…</span>
+    </div>
+    <div class="pole"></div>
+    <header>
+      <div class="hd">
+        <span class="logo" id="brand"></span>
+        <nav id="nav"></nav>
+        <button id="lo" hidden onclick="salir()" aria-label="Cerrar sesión">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <path d="M16 17l5-5-5-5" />
+            <path d="M21 12H9" /></svg
+          ><span>Cerrar sesión</span>
+        </button>
+      </div>
+    </header>
+    <div id="app"></div>
+    <div id="mo" hidden onclick="if (event.target === this) Mx();"></div>
+    <script type="module" src="barber.js"></script>
+    <script>
+      setTimeout(function () {
+        if (!window.R)
+          document.getElementById("ldt").textContent =
+            "No se pudo cargar la app. Revisá tu conexión o abrila desde un servidor web (no con doble clic).";
+      }, 8000);
+    </script>
+  </body>
+</html>
