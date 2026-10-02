@@ -8,17 +8,17 @@
         appId: "1:968927411493:web:cacd75772f2fb791132ecc"
       };
       export const ADMIN_UID = "LQ7IkEfxEKNXajx4SEs378n390i2";
-      export const NOMBRE = "Tu Barbería";
+      export const NOMBRE = "Codigo Barber 1"; // nombre de la barbería
       export const AUTOR = "Agustín Ibarra"; // nombre que aparece en el pie de la web
       export const S = [
-        { n: "Corte", m: 30, p: 8000 },
-        { n: "Barba", m: 30, p: 5000 },
-        { n: "Corte + barba", m: 60, p: 12000 },
+        { n: "Corte (Incluye cejas)", m: 30, p: 15000 },
+        { n: "Barba", m: 30, p: 8000 },
+        { n: "Corte + barba", m: 60, p: 20000 },
       ]; // m = minutos, p = precio en $ (cambiar por los reales)
       export const PTS = 5,
         PR = [
           { n: "DESCUENTO 20% 🔥", p: 25 },
-          { n: "DESCUENTO 50% 🔥", p: 60 },
+          { n: "DESCUENTO 50% 🔥", p: 50 },
           { n: "CORTE GRATIS ‼️", p: 100 },
         ];
       export const MC = ["No puedo asistir", "Me surgió un imprevisto", "Me equivoqué de día u hora", "Otro motivo"]; // motivos (cliente)
