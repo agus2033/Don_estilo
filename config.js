@@ -24,6 +24,6 @@
       export const MC = ["No puedo asistir", "Me surgió un imprevisto", "Me equivoqué de día u hora", "Otro motivo"]; // motivos (cliente)
       export const MB = ["El cliente avisó que no viene", "No se presentó", "Imprevisto del barbero", "Otro motivo"]; // motivos (barbero)
       export const MP = ["Efectivo", "Transferencia"]; // medios de pago
-      export const WHATSAPP = "3757692393"; // número con código de país, sin + ni espacios. Ej: "5491122334455"
+      export const WHATSAPP = "3757644751"; // número con código de país, sin + ni espacios. Ej: "5491122334455"
 export const RECAPTCHA_KEY = ""; // clave de sitio reCAPTCHA v3 para App Check (vacío = desactivado)
 export const CANCEL_HS = 2; // horas mínimas de anticipación para que el cliente cancele
